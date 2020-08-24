@@ -1,0 +1,18 @@
+print("Welcome to the monthly income assessor!")
+income = float(input("What is your monthly income?:"))
+house = float(input("How much do you spend on housing?:"))
+transport = float(input("How much do you spend on transportation?:"))
+phone = float(input("How much is your phone bill?:"))
+utility = float(input("How much are utilities?:"))
+clothes = float(input("how much do you spend on clothing?:"))
+cost = (house + transport + phone + utility + clothes)
+print("")
+
+print("Your monthly income is", income)
+print("Housing = ", format(house / income, '.2%'), "of your income.")
+print("Transportation = ", format(transport / income, '.2%'), "of your income")
+print("Phone bills = ", format(phone / income, '.2%'), "of your income")
+print("Utilities = ", format(utility / income, '.2%'), "of your income")
+print("Clothing = ", format(clothes / income, '.2%'), "of your income")
+
+print("You have ", (income - cost), "after expenses")
